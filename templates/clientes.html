@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}Clientes{% endblock %}
+
+{% block main %}
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <!-- Breadcrumbs --!>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Gestão de carteira</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Clientes</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+  <button><a href="{% url 'adicionar_cliente' %}">Adicionar novo cliente</a></button>
+
+  <!-- tabela de clientes --!>
+  <div class="row">
+      <div class="col">
+          <div class="card">
+              <div class="card-body">
+                  <h5 class="card-title">Meus clientes</h5>
+
+                  {% for cliente in object_list %}
+                  <ul><a href="{% url 'detalhes_cliente' cliente.pk %}">{{ cliente.nome }}</a>
+                  {{ cliente.cidade }}
+                  {{ cliente.data_nascimento }}
+                  {{ cliente.cpf_cnpj }}
+                  {{ cliente.identificador }}
+                  {{ cliente.porte }}
+                  {{ cliente.carteira }}
+                  {{ cliente.ciclo_de_vida }}
+                  {{ cliente.nota_NPS }}<small>(<a href="{% url 'editar_cliente' cliente.pk %}">Editar</a>)</small></ul>
+                  {% endfor %}
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+</div>
+
+{% endblock %}

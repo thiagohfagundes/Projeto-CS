@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Detalhe{% endblock %}
+
+{% block main %}
+    {{ cliente.nome }}
+    {{ cliente.cidade }}
+    {{ cliente.data_nascimento }}
+    {{ cliente.cpf_cnpj }}
+    {{ cliente.identificador }}
+    {{ cliente.porte }}
+    {{ cliente.carteira }}
+    {{ cliente.ciclo_de_vida }}
+    {{ cliente.nota_NPS }}
+{% endblock %}
