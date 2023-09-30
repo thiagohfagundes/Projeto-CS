@@ -1,12 +1,12 @@
 from django.db import models
 from django.urls import reverse
-from usuarios.models import Usuario
+from django.contrib.auth.models import User
 from produtos.models import Produto
 
 class Carteira(models.Model):
     nome = models.CharField(max_length=30)
     descricao = models.CharField(max_length=300, blank=True, null=True)
-    responsavel = models.ForeignKey(Usuario, on_delete=models.SET_NULL, blank=True, null=True)
+    responsavel = models.ForeignKey(User, on_delete=models.SET_NULL, blank=True, null=True)
 
 # Create your models here.
 class Cliente(models.Model):
@@ -28,7 +28,7 @@ class Cliente(models.Model):
     # incluir tarefas com relação onetomany
 
     def get_absolute_url(self):
-        return reverse('clientes', args=(str(self.id)))
+        return reverse('clientes')
 
 class Contrato(models.Model):
     STATUS_CONTRATO = [

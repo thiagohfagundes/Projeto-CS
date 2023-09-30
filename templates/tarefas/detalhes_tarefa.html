@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Detalhes{% endblock %}
+
+<h1>Detalhes da tarefa: {{ tarefa.nome }}</h1>
+
+{% block main %}
+    {{ tarefa.objetivo }}
+    {{ tarefa.tipo_tarefa }}
+    {{ tarefa.cliente }}
+    {{ tarefa.criado_por }}
+    {{ tarefa.atribuido_a }}
+    {{ tarefa.status_tarefa }}
+    {{ tarefa.data_criacao }}
+    {{ tarefa.data_atualizacao }}
+    {{ tarefa.data_da_tarefa }}
+{% endblock %}

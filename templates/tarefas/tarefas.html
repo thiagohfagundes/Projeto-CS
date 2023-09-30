@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block title %}Tarefas{% endblock %}
+
+{% block main %}
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <!-- Breadcrumbs --!>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Gestão de carteira</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Tarefas</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+  <button><a href="{% url 'criar_tarefa' %}">Adicionar nova tarefa</a></button>
+
+  <!-- tabela de clientes --!>
+  <div class="row">
+      <div class="col">
+          <div class="card">
+              <div class="card-body">
+                  <h5 class="card-title">Minhas tarefas</h5>
+
+                  {% for tarefa in object_list %}
+                  <ul><a href="{% url 'detalhes_tarefa' tarefa.pk %}">{{ tarefa.nome }}</a>
+                      {{ tarefa.objetivo }}
+                      {{ tarefa.tipo_tarefa }}
+                      {{ tarefa.cliente }}
+                      {{ tarefa.criado_por }}
+                      {{ tarefa.atribuido_a }}
+                      {{ tarefa.status_tarefa }}
+                      {{ tarefa.data_criacao }}
+                      {{ tarefa.data_atualizacao }}
+                      {{ tarefa.data_da_tarefa }}</ul>
+                  {% endfor %}
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+</div>
+
+{% endblock %}

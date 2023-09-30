@@ -11,17 +11,16 @@ class ListarClientes(ListView):
     model = Cliente
     template_name = 'clientes.html'
 
-# ainda não funciona claramente, preciso estudar essa createview
 class AdicionarCliente(CreateView):
     model = Cliente
-    template_name = 'criarcliente.html'
+    template_name = 'clientes/criarcliente.html'
     fields = '__all__'
 
 class EditarCliente(UpdateView):
     model = Cliente
-    template_name = 'editarcliente.html'
+    template_name = 'clientes/editarcliente.html'
     fields = '__all__'
 
 class DetalhesCliente(DetailView):
     model = Cliente
-    template_name = 'detalhescliente.html'
+    template_name = 'clientes/detalhescliente.html'
