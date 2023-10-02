@@ -5,24 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a24ffae7-e6a0-45e6-beb3-950a24fdee9f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/tarefas/detalhes_tarefa.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/tarefas/editar_tarefa.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/tarefas/tarefas.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/clientes/deletarcliente.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appcs/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/appcs/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestaocarteira/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestaocarteira/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestaocarteira/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestaocarteira/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gestaocarteira/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestaocarteira/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tarefas/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tarefas/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tarefas/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tarefas/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tarefas/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tarefas/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/clientes.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/clientes/clientes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/criarcliente.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/clientes/criarcliente.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/detalhescliente.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/clientes/detalhescliente.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/editarcliente.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/clientes/editarcliente.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/tarefas.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tarefas/criar_tarefas.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/clientes/clientes.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/clientes/clientes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/clientes/detalhescliente.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/clientes/detalhescliente.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/clientes/editarcliente.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/clientes/editarcliente.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/editar_perfil.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/editar_perfil.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/mudarsenha.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/mudarsenha.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/tarefas/criar_tarefas.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tarefas/criar_tarefas.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/tarefas/detalhes_tarefa.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tarefas/detalhes_tarefa.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/tarefas/editar_tarefa.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tarefas/editar_tarefa.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/tarefas/tarefas.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tarefas/tarefas.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

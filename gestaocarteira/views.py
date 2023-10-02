@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .models import *
 from django.views.generic import ListView, DetailView, CreateView, DeleteView, UpdateView
+from django.urls import reverse_lazy
 
 # Create your views here.
 def index(request):
@@ -9,7 +10,7 @@ def index(request):
 
 class ListarClientes(ListView):
     model = Cliente
-    template_name = 'clientes.html'
+    template_name = 'clientes/clientes.html'
 
 class AdicionarCliente(CreateView):
     model = Cliente
@@ -24,3 +25,8 @@ class EditarCliente(UpdateView):
 class DetalhesCliente(DetailView):
     model = Cliente
     template_name = 'clientes/detalhescliente.html'
+
+class DeletarCliente(DeleteView):
+    model = Cliente
+    template_name = 'clientes/deletarcliente.html'
+    success_url = reverse_lazy('clientes')

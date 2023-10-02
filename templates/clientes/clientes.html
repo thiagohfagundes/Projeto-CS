@@ -3,7 +3,7 @@
 {% block title %}Clientes{% endblock %}
 
 {% block main %}
-
+{% if user.is_authenticated %}
 <div class="container">
   <div class="row">
     <div class="col">
@@ -35,14 +35,12 @@
                   {{ cliente.porte }}
                   {{ cliente.carteira }}
                   {{ cliente.ciclo_de_vida }}
-                  {{ cliente.nota_NPS }}<small>(<a href="{% url 'editar_cliente' cliente.pk %}">Editar</a>)</small></ul>
+                  {{ cliente.nota_NPS }}<small>(<a href="{% url 'editar_cliente' cliente.pk %}">Editar</a>)</small><small>(<a href="{% url 'deletar_cliente' cliente.pk %}">Deletar</a>)</small></ul>
                   {% endfor %}
               </div>
           </div>
       </div>
   </div>
-
-
 </div>
-
+{% endif %}
 {% endblock %}

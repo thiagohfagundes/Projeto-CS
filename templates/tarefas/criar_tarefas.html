@@ -3,10 +3,11 @@
 {% block title %}Criar nova tarefa{% endblock %}
 
 {% block main %}
+{% if user.is_authenticated %}
 <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
     <button type="submit">Criar tarefa</button>
 </form>
-
+{% endif %}
 {% endblock %}

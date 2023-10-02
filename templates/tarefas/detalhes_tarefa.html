@@ -2,9 +2,9 @@
 
 {% block title %}Detalhes{% endblock %}
 
-<h1>Detalhes da tarefa: {{ tarefa.nome }}</h1>
-
 {% block main %}
+{% if user.is_authenticated %}
+<h1>Detalhes da tarefa: {{ tarefa.nome }}</h1>
     {{ tarefa.objetivo }}
     {{ tarefa.tipo_tarefa }}
     {{ tarefa.cliente }}
@@ -14,4 +14,5 @@
     {{ tarefa.data_criacao }}
     {{ tarefa.data_atualizacao }}
     {{ tarefa.data_da_tarefa }}
+{% endif %}
 {% endblock %}

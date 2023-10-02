@@ -12,4 +12,5 @@
     {{ cliente.carteira }}
     {{ cliente.ciclo_de_vida }}
     {{ cliente.nota_NPS }}
+    <small>(<a href="{% url 'editar_cliente' cliente.pk %}">Editar</a>)</small><small>(<a href="{% url 'deletar_cliente' cliente.pk %}">Deletar</a>)</small>
 {% endblock %}
