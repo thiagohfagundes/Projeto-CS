@@ -1,5 +1,6 @@
 from django.db import models
 from gestaocarteira.models import Cliente
+#from negocios.models import Negocio
 from django.contrib.auth.models import User
 from django.urls import reverse
 
@@ -32,6 +33,7 @@ class Tarefa(models.Model):
     objetivo = models.CharField(max_length=356)
     tipo_tarefa = models.CharField(max_length=3, choices=TIPO_TAREFA)
     cliente = models.ForeignKey(Cliente, on_delete=models.CASCADE)
+    #negocio = models.ForeignKey(Negocio, blank=True, null=True, on_delete=models.CASCADE)
     criado_por = models.ForeignKey(User, on_delete=models.CASCADE, related_name='criado_por')
     atribuido_a = models.ForeignKey(User, on_delete=models.CASCADE, related_name='atribuido_a')
     status_tarefa = models.CharField(max_length=3, choices=STATUS_TAREFA)

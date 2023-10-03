@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block title %}Detalhe{% endblock %}
+
+{% block main %}
+    {{ negocio.nome }}
+
+    <small>(<a href="{% url 'editar_negocio' negocio.pk %}">Editar</a>)</small><small>(<a href="{% url 'deletar_negocio' negocio.pk %}">Deletar</a>)</small>
+{% endblock %}

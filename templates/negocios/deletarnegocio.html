@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Deletar negócio{% endblock %}
+
+{% block main %}
+<h5>Deletar negócio {{ cliente.nome }}</h5>
+<form method="post">
+    {% csrf_token %}
+    <p>Tem certeza</p>
+    <button type="submit">Deletar negócio</button>
+</form>
+
+{% endblock %}

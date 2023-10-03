@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'usuarios.apps.UsuariosConfig',
     'produtos.apps.ProdutosConfig',
     'tarefas.apps.TarefasConfig',
+    'negocios.apps.NegociosConfig',
     'crispy_forms',
     'crispy_bootstrap4'
 ]
