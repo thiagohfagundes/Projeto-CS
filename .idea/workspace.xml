@@ -5,27 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a24ffae7-e6a0-45e6-beb3-950a24fdee9f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/negocios/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/negocios/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/negocios/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/negocios/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/negocios/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/negocios/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/negocios/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tarefas/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/negocios/criarnegocio.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/negocios/deletarnegocio.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/negocios/detalhesnegocio.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/negocios/editarnegocio.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/negocios/negocios.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appcs/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/appcs/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gestaocarteira/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestaocarteira/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tarefas/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tarefas/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tarefas/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tarefas/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/clientes/clientes.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/clientes/clientes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usuarios/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/usuarios/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usuarios/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/usuarios/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/negocios/negocios.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/negocios/negocios.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/tarefas/tarefas.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tarefas/tarefas.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -5,42 +5,52 @@
 {% block main %}
 {% if user.is_authenticated %}
 <div class="container">
-
-  <button><a href="{% url 'adicionar_negocio' %}">Adicionar novo negócio</a></button>
+    <div class="row">
+        <div class="col">
+          <!-- Breadcrumbs --!>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="{% url 'index' %}">Gestão de carteira</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Negócios</li>
+            </ol>
+          </nav>
+        </div>
+    </div>
+    <button><a href="{% url 'adicionar_negocio' %}">Adicionar novo negócio</a></button>
 
   <!-- tabela de clientes --!>
-  <div class="row">
-      <div class="col">
-          <div class="card">
-              <div class="card-body">
-                  <h5 class="card-title">Meus negócios</h5>
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Meus negócios</h5>
 
-                  {% for negocio in object_list %}
-                  <ul><a href="{% url 'detalhes_negocio' negocio.pk %}">{{ negocio.nome }}</a>
-                  <small>(<a href="{% url 'editar_negocio' negocio.pk %}">Editar</a>)</small><small>(<a href="{% url 'deletar_negocio' negocio.pk %}">Deletar</a>)</small></ul>
-                  {% endfor %}
-              </div>
-          </div>
-      </div>
-  </div>
+                    {% for negocio in object_list %}
+                        <ul><a href="{% url 'detalhes_negocio' negocio.pk %}">{{ negocio.nome }}</a>
+                        <small>(<a href="{% url 'editar_negocio' negocio.pk %}">Editar</a>)</small><small>(<a href="{% url 'deletar_negocio' negocio.pk %}">Deletar</a>)</small></ul>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
 <!-- paginação --!>
-<div class="pagination">
-    <span class="step-links">
-        {% if page_obj.has_previous %}
-            <a href="?page=1">&laquo; Primeira</a>
-            <a href="?page={{ page_obj.previous_page_number }}">Anterior</a>
-        {% endif %}
+    <div class="pagination">
+        <span class="step-links">
+            {% if page_obj.has_previous %}
+                <a href="?page=1">&laquo; Primeira</a>
+                <a href="?page={{ page_obj.previous_page_number }}">Anterior</a>
+            {% endif %}
 
-        <span class="current">
+            <span class="current">
             Página {{ page_obj.number }} de {{ page_obj.paginator.num_pages }}.
-        </span>
+            </span>
 
-        {% if page_obj.has_next %}
-            <a href="?page={{ page_obj.next_page_number }}">Próxima</a>
-            <a href="?page={{ page_obj.paginator.num_pages }}">Última &raquo;</a>
-        {% endif %}
-    </span>
-</div>
+            {% if page_obj.has_next %}
+                <a href="?page={{ page_obj.next_page_number }}">Próxima</a>
+                <a href="?page={{ page_obj.paginator.num_pages }}">Última &raquo;</a>
+            {% endif %}
+        </span>
+    </div>
 </div>
 
 

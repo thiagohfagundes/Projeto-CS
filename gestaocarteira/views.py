@@ -11,23 +11,23 @@ def index(request):
 class ListarClientes(ListView):
     model = Cliente
     paginate_by = 25
-    template_name = 'clientes/negocios.html'
+    template_name = 'clientes/clientes.html'
 
 class AdicionarCliente(CreateView):
     model = Cliente
-    template_name = 'clientes/criarnegocio.html'
+    template_name = 'clientes/criarcliente.html'
     fields = '__all__'
 
 class EditarCliente(UpdateView):
     model = Cliente
-    template_name = 'clientes/editarnegocio.html'
+    template_name = 'clientes/editarcliente.html'
     fields = '__all__'
 
 class DetalhesCliente(DetailView):
     model = Cliente
-    template_name = 'clientes/detalhesnegocio.html'
+    template_name = 'clientes/detalhescliente.html'
 
 class DeletarCliente(DeleteView):
     model = Cliente
-    template_name = 'clientes/deletarnegocio.html'
+    template_name = 'clientes/deletarcliente.html'
     success_url = reverse_lazy('clientes')
