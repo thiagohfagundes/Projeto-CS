@@ -10,7 +10,7 @@ class ListarNegocios(ListView):
 
 class AdicionarNegocio(CreateView):
     model = Negocio
-    template_name = 'clientes/criarnegocio.html'
+    template_name = 'negocios/criarnegocio.html'
     fields = '__all__'
 
 class EditarNegocio(UpdateView):

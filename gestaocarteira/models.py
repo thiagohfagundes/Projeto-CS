@@ -40,7 +40,7 @@ class Contrato(models.Model):
     produto = models.ForeignKey(Produto, on_delete=models.CASCADE)
     cliente = models.ForeignKey(Cliente, on_delete=models.CASCADE)
     data_início = models.DateField()
-    data_final = models.DateField
+    data_final = models.DateField(null=True, blank=True)
     status_contrato = models.CharField(max_length=1, choices=STATUS_CONTRATO)
     MRR = models.FloatField(max_length=12, blank=True, null=True)
     NRR = models.FloatField(max_length=12, blank=True, null=True)

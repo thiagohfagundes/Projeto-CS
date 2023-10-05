@@ -1,13 +1,27 @@
 {% extends 'base.html' %}
+{% load crispy_forms_tags %}
 
 {% block title %}Criar nova tarefa{% endblock %}
 
 {% block main %}
 {% if user.is_authenticated %}
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Criar tarefa</button>
-</form>
+<a href="{% url 'clientes' %}">Voltar à página anterior</a>
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Criar nova tarefa</h5>
+
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <button type="submit" class="btn btn-primary">Criar tarefa</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% else %}
+<h1>Você não está autenticado, faça login e tente novamente</h1>
 {% endif %}
 {% endblock %}

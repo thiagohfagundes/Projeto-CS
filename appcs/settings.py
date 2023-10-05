@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'produtos.apps.ProdutosConfig',
     'tarefas.apps.TarefasConfig',
     'negocios.apps.NegociosConfig',
+    'churn.apps.ChurnConfig',
     'crispy_forms',
     'crispy_bootstrap4'
 ]

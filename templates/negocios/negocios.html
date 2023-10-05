@@ -27,7 +27,7 @@
 
                     {% for negocio in object_list %}
                         <ul><a href="{% url 'detalhes_negocio' negocio.pk %}">{{ negocio.nome }}</a>
-                        <small>(<a href="{% url 'editar_negocio' negocio.pk %}">Editar</a>)</small><small>(<a href="{% url 'deletar_negocio' negocio.pk %}">Deletar</a>)</small></ul>
+                        <small>(<a href="{% url 'editar_negocio' negocio.pk %}">Editar</a>)</small></ul>
                     {% endfor %}
                 </div>
             </div>
